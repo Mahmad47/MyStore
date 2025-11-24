@@ -28,7 +28,7 @@ const RatingStars = ({ value = 4.5 }) => (
 );
 
 const ProductDetails = () => {
-      window.scrollTo(0, 0);
+    //   window.scrollTo(0, 0);
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [selectedImage, setSelectedImage] = useState("");
@@ -164,12 +164,12 @@ const ProductDetails = () => {
                     </div>
 
                     {/* Gallery */}
-                    <div className="grid grid-cols-6 !gap-2">
+                    <div className="grid grid-cols-3 md:grid-cols-6 !gap-2">
                         {[product.featureImage, ...(product.galleryImages || [])].slice(0, 8).map((img, idx) => (
                             <div
                                 key={idx}
                                 onClick={() => setSelectedImage(img)}
-                                className={`w-[85%] h-[70px] md:h-[100px] p-1 cursor-pointer border  b0 transition ${selectedImage === img
+                                className={`w-[82%] h-[70px] md:h-[100px] md:w-[85%] p-1 cursor-pointer border  b0 transition ${selectedImage === img
                                     ? "border-[var(--color-black)]"
                                     : "border-gray-100 hover:border-[var(--color-black)]"
                                     }`}
@@ -270,7 +270,7 @@ const ProductDetails = () => {
                     <button
                         key={t.value}
                         onClick={() => setTab(t.value)}
-                        className={`py-3 px-6 menu uppercase transition relative ${tab === t.value
+                        className={`py-3 px-6 uppercase !text-black text-small md:!text transition relative ${tab === t.value
                             ? "text-[var(--color-primary)] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:bg-[var(--color-primary)]"
                             : "text-black hover:text-i[var(--color-primary)]"
                             }`}
