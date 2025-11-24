@@ -18,7 +18,7 @@ const ContentHeader = ({
 
     const { user } = useAuth();
     const profilePic =
-        user?.avatar ||
+        `${import.meta.env.VITE_BACKEND_URL}${user?.avatar}` ||
         getAssetPath(`${ASSET_AVATARS}/avatar10.jpg`, `60x60`);
     return (
         <Div sx={{ ...sx }}>
@@ -32,6 +32,7 @@ const ContentHeader = ({
                 subheader={subheader}
                 action={children}
             />
+            {console.log(profilePic)}
             {body && (
                 <Typography variant={"body1"} mb={2}>
                     {body}

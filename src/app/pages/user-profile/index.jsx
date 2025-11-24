@@ -31,7 +31,7 @@ const UserProfilePage = () => {
                 <div className="flex md:items-end md:justify-between flex-wrap flex-col md:flex-row gap-4">
                     <div className="flex items-end gap-4">
                         <img
-                            src={user?.avatar || "https://via.placeholder.com/150"}
+                            src={`${import.meta.env.VITE_BACKEND_URL}${user?.avatar}` || "https://via.placeholder.com/150"}
                             alt="User Avatar"
                             className="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover"
                         />

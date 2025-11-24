@@ -31,7 +31,7 @@ const AuthUserPopover = () => {
     return navigate("/auth/login-1");
   }
   const profilePic =
-    user?.avatar ||
+    `${import.meta.env.VITE_BACKEND_URL}${user?.avatar}` ||
     getAssetPath(`${ASSET_AVATARS}/avatar10.jpg`, `60x60`);
 
   return (
