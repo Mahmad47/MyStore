@@ -80,7 +80,6 @@ const AdminProfileForm = () => {
         data.append("age", formData.age);
         data.append("phone", formData.phone);
         if (avatarFile) data.append("avatar", avatarFile);
-        console.log(data);
         updateRequest(
             `/auth/users/${user?.id}`,
             data,
@@ -90,7 +89,7 @@ const AdminProfileForm = () => {
                     id: res.data._id,
                 };
                 console.log(res);
-                console.log(updatedUser);
+                console.log("updated user", updatedUser);
                 updateUserInCookie(updatedUser);
                 setFormData({
                     name: updatedUser.name,

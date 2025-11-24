@@ -66,6 +66,8 @@ const UserProfileForm = () => {
     data.append("phone", formData.phone);
     if (avatarFile) data.append("avatar", avatarFile);
 
+    console.log("your avatar", avatarFile)
+
     updateRequest(
       `/auth/users/${user?.id}`,
       data,
