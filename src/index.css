@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: 'Playfair Display', sans-serif;
+  --font-secondary: 'DM Sans', sans-serif;
+  /* Colors */
+  --color-primary: #00d1ff;
+  --color-secondary: #020202;
+  --color-accent: #00d1ff;
+  --color-bg: #000000;
+  --color-text: #00000095;
+  --color-white: #ffffff;
+  --color-black: #020202;
+  --color-grey: #f7f7f7;
+  --color-border: #ddd;
+
+  /* Font Sizes (Desktop Defaults) */
+  --fs-h1: 60px;
+  --fs-h1-lh: 70px;
+  --fs-h2: 50px;
+  --fs-h2-lh: 60px;
+  --fs-h3: 30px;
+  --fs-h3-lh: 40px;
+  --fs-h4: 25px;
+  --fs-h4-lh: 35px;
+  --fs-h5: 22px;
+  --fs-h5-lh: 32px;
+  --fs-h6: 18px;
+  --fs-h6-lh: 28px;
+  --fs-text: 16px;
+  --fs-text-lh: 26px;
+  --fs-text-small: 14px;
+  --fs-text-small-lh: 24px;
+  --fs-accent: 16px;
+  --fs-accent-lh: 18px;
+  --fs-menu: 16px;
+  --fs-menu-lh: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-black);
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--fs-h1-lh);
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--fs-h2-lh);
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--fs-h3-lh);
+}
+
+h4,
+.h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--fs-h4-lh);
+}
+
+h5,
+.h5 {
+  font-size: var(--fs-h5);
+  line-height: var(--fs-h5-lh);
+}
+
+h6,
+.h6 {
+  font-size: var(--fs-h6);
+  line-height: var(--fs-h6-lh);
+}
+
+.sub-title {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-h6);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: var(--fs-h6-lh);
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: var(--font-secondary);
+  /* background-color: var(--color-bg); */
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.text,
+p {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: var(--fs-text);
+  line-height: var(--fs-text-lh);
+  color: var(--color-text);
+}
+
+.text-small {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: var(--fs-text-small);
+  line-height: var(--fs-text-small-lh);
+  color: var(--color-text);
+}
+
+.accent {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: var(--fs-accent);
+  line-height: var(--fs-accent-lh);
+  color: var(--color-accent);
+}
+
+.menu {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: var(--fs-menu);
+  line-height: var(--fs-menu-lh);
+}
+
+.drop-menu {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.drop-menu:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.button {
+  background-color: var(--color-accent);
+  font-weight: 500;
+  font-size: var(--fs-accent);
+  line-height: var(--fs-accent-lh);
+  color: var(--color-white);
+  border: none;
+  padding: 15px 35px;
+  font-family: var(--font-secondary);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.b0 {
+  border-radius: 10px;
+}
+
+.b1 {
+  border-radius: 20px;
+}
+
+.b2 {
+  border-radius: 40px;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+}
+
+.bgcolor {
+  background-color: var(--color-bg);
+}
+
+.bordercolor {
+  border-color: var(--color-border);
+}
+
+.sp {
+  padding: 5% 5%;
+}
+
+.container {
+  max-width: 1360px !important;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+}
+
+.row {
+  display: flex;
+  gap: 5;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+}
+
+.marquee-text {
+  color: transparent;
+  /* makes inside empty */
+  -webkit-text-stroke: 1px #00000075;
+  /* black stroke */
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --fs-h1: 40px;
+    --fs-h1-lh: 50px;
+    --fs-h2: 30px;
+    --fs-h2-lh: 40px;
+    --fs-h3: 25px;
+    --fs-h3-lh: 35px;
+    --fs-h4: 22px;
+    --fs-h4-lh: 32px;
+    --fs-h5: 18px;
+    --fs-h5-lh: 28px;
+    --fs-h6: 16px;
+    --fs-h6-lh: 26px;
+  }
+
+  .button {
+    padding: 12px 22px;
+  }
+
+  .container {
+    max-width: 90% !important;
+  }
+
+  .sp {
+    padding: 12% 5%;
+  }
+}
