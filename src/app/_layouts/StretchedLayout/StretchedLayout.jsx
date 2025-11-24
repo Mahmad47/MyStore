@@ -15,7 +15,7 @@ export function StretchedLayout() {
     <JumboLayoutProvider layoutConfig={defaultLayoutConfig}>
       <JumboLayout
         header={<Header />}
-        footer={<Footer />}
+        // footer={<Footer />}
         sidebar={<Sidebar menus={menus} />}
       >
         {location.pathname === "/" && <Navigate to={"/"} />}

@@ -9,7 +9,7 @@ const Logo = ({ mini = false, mode = "light", sx }) => {
           <img
             src={
               mode === "light"
-                ? `/assets/images/logo.png`
+                ? `/assets/images/logo1.png`
                 : `/assets/images/logo-white.png`
             }
             alt="Jumbo React"

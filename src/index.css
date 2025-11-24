@@ -232,6 +232,15 @@ p {
   font-weight: 600;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite; /* desktop */
+}
+
 
 @media (max-width: 768px) {
   :root {
@@ -259,5 +268,8 @@ p {
 
   .sp {
     padding: 12% 5%;
+  }
+  .animate-marquee {
+    animation-duration: 10s !important; /* speed up on mobile */
   }
 }

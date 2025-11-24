@@ -39,7 +39,8 @@ const LandingHeader = () => {
       <div className=" mx-auto px-[5%] w-full flex items-center justify-between lg:container">
         {/* LEFT: Logo */}
         <Link to="/">
-          <h3 className="h3 font-semibold tracking-wide">MyShop</h3>
+        <img className="w-[140px]" src="/assets/images/logo1.png" alt="" srcset="" />
+          {/* <h3 className="h3 font-semibold tracking-wide">MyShop</h3> */}
         </Link>
 
         {/* CENTER: Menu */}
@@ -50,9 +51,9 @@ const LandingHeader = () => {
           <Link to="/shop" className="hover:text-[var(--color-primary)] transition">
             Shop
           </Link>
-          <Link to="/about" className="hover:text-[var(--color-primary)] transition">
+          {/* <Link to="/about" className="hover:text-[var(--color-primary)] transition">
             About
-          </Link>
+          </Link> */}
           <Link to="/contact" className="hover:text-[var(--color-primary)]  transition">
             Contact
           </Link>
