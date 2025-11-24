@@ -8,7 +8,6 @@ import CategoriesPage from "@app/pages/admin/product-categories/categories";
 import SubcategoriesPage from "@app/pages/admin/product-categories/subcategories";
 import ProductsPage from "@app/pages/admin/products";
 import MiscPage from "@app/pages/order-history";
-import SimpleTask from "@app/pages/simple-task";
 import { StretchedLayout } from "@app/_layouts/StretchedLayout";
 import LandingLayout from "@app/_layouts/LandingLayout/LandingLayout";
 import { SoloLayout } from "@app/_layouts/SoloLayout"; 
