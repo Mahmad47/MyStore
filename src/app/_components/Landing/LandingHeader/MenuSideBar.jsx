@@ -45,13 +45,13 @@ export default function MenuSidebar({ open, onClose }) {
           >
             Shop
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-[var(--color-primary)] transition"
             to="/about"
             onClick={onClose}
           >
             About
-          </Link>
+          </Link> */}
           <Link
             className="hover:text-[var(--color-primary)] transition"
             to="/contact"

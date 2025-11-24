@@ -10,7 +10,7 @@ export default function HeroSection() {
                 Welcome to MyShop</h1>
 
               <div className="herocontent  flex flex-col gap-8 w-full items-start ">
-                <p className="w-full !text-[18px]/[28px] lg:w-[580px] lg:!text-[20px]/[30px]">Discover innovative technology products and gadgets that redefine your experience.</p>
+                <p className="w-full !text-[18px]/[28px] !text-black lg:w-[580px] lg:!text-[20px]/[30px]">Discover innovative technology products and gadgets that redefine your experience.</p>
                 <Link to="/shop">
                   <button className="button flex gap-2"> Shop Now
                   </button>
