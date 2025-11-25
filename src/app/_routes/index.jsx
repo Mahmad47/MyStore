@@ -23,6 +23,7 @@ import DashboardPage from "@app/pages/admin/dashboard";
 import UserDashboardPage from "@app/pages/dashboard";
 import AdminOrdersPage from "@app/pages/admin/AdminOrders";
 import ShopPage from "@app/pages/shop";
+import ContactPage from "@app/pages/contact";
 
 const routes = [
   {
@@ -44,6 +45,10 @@ const routes = [
       {
         path: "/shop" ,
         element: <Page Component={ShopPage}/>,
+      },
+      {
+        path: "/contact",
+        element: <Page Component={ContactPage}/>,
       },
       {
         path: "/order-success",
